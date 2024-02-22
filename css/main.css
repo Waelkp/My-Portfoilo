@@ -295,6 +295,8 @@ main .text button a {
     transparent,
     white 180%
   );
+  border-radius: 0px 0px 50px 50px;
+
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 .slide {
@@ -318,3 +320,116 @@ main .text button a {
   }
 }
 /* End Line */
+/* Start Projects Secition */
+.projects {
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+.projects .contener {
+}
+.projects section {
+}
+.projects section .done {
+  color: var(--textColorMain);
+  font-family: two, one, three, four;
+  /* ====== */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+  flex-wrap: wrap;
+}
+section .done .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .done .text p:first-child {
+  font-family: "Prompt", sans-serif;
+}
+section .done .text h2 {
+  font-family: two;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+section .done .text p:last-child {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.3;
+}
+
+section .done .sec-img {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  transition: var(--TranitionMain);
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+section .done .sec-img img {
+  /* max-width: 100%; */
+  height: 150px;
+}
+.netflex-desktop {
+  position: absolute;
+  left: 19px;
+  top: 4px;
+  width: 208px;
+  height: 132px !important;
+  z-index: -1;
+}
+.netflex-mobile {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  z-index: -1;
+  border-radius: 14px;
+}
+.click {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  display: block;
+  padding: 5px 0px;
+  margin-top: 10px;
+}
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 13px 20px;
+  background-color: #434343;
+  color: rgb(201, 195, 195);
+  transition: var(--TranitionMain);
+  transform-origin: bottom left;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+}
+.btn a {
+  color: white;
+  font-family: two;
+  text-decoration: none;
+}
+/* Mobile */
+@media (width < 786px) {
+  .projects section .done {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section .done .text {
+    text-align: center;
+  }
+  .done .text .click {
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+.pand {
+  position: relative;
+}
+/* Mobile */
+/* End Projects Secition */
