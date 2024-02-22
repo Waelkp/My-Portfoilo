@@ -254,59 +254,43 @@ main .text button a {
   box-shadow: 0px 2px 10px #515151;
 }
 /* End   Landing Page || Main Secition */
-p.one {
-            text-align: center;
-            font-family: "Archivo Black", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+@font-face {
+  font-family: one;
+  src: url(../Font/BebasNeue-Regular.ttf);
 }
-p.two {
-            text-align: center;
-            font-family: "Oswald", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+@font-face {
+  font-family: two;
+  src: url(../Font/neuropolitical\ rg.otf);
 }
-p.three {
-            text-align: center;
-            font-family: "Prompt", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+@font-face {
+  font-family: three;
+  src: url(../Font/UndergroundNF.ttf);
 }
-p.four {
-            text-align: center;
-            font-family: "PT Sans", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+@font-face {
+  font-family: four;
+  src: url(../Font/UndergroundNF.ttf);
 }
-p.five {
-            text-align: center;
-            font-family: "Inter", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+.g {
+  font-family: one;
+  font-size: 25px;
+  color: white;
+  background-color: #000000;
 }
-p.seven {
-            text-align: center;
-            font-family: "DM Sans", sans-serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+.gg {
+  font-family: two;
+  font-size: 25px;
+  color: white;
+  background-color: #000000;
 }
-p.eight {
-            text-align: center;
-            font-family: "Playfair Display", serif;
-            color: white;
-            background-color: black;
-            margin: 5px 0;
-            font-size: 25px;
+.ggg {
+  font-family: thre;
+  font-size: 25px;
+  color: white;
+  background-color: #000000;
+}
+.g4 {
+  font-family: four;
+  font-size: 25px;
+  color: white;
+  background-color: #000000;
 }
