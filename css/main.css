@@ -8,7 +8,7 @@ body {
 }
 .bg-grad {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background: linear-gradient(
     180deg,
     #434343,
@@ -210,12 +210,14 @@ header .right .link a {
 /* Start Landing Page || Main Secition */
 main {
   height: calc(100vh - 108px);
+  height: 100vh;
 }
 main .contener {
-  gap: 100px;
+  gap: 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
 }
 main .box-gradint {
@@ -225,13 +227,30 @@ main .box-gradint {
   inset: 0;
 }
 main .text {
-  width: 50%;
   text-align: center;
+  width: 70%;
 }
 main .text h1 {
-  /* font-family: myfont; */
-  font-family:"Oswald", sans-serif;;
+  font-family: "Archivo Black", sans-serif;
   color: var(--textColorMain);
+  margin: 0 auto;
 }
-
+main .text button {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  border: none;
+  padding: 15px 10px;
+  width: 125px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: black;
+  color: wheat;
+  box-shadow: 0px 2px 10px #515151;
+}
+main .text button a {
+  text-decoration: none;
+  color: wheat;
+  box-shadow: 0px 2px 10px #515151;
+}
 /* End   Landing Page || Main Secition */
