@@ -283,31 +283,37 @@ main .text button a {
 /* End   Landing Page || Main Secition */
 /* Start Line */
 .line {
-  background-color: white;
-  /* background-image: radial-gradient(white, #909090); */
-  background: linear-gradient(180deg, #0e1111 0%, #fff 50%);
+  background: linear-gradient(180deg, #0e1111 0%, #fff 20%);
   padding: 30px 5px;
   margin: 30px 0px;
   overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    transparent,
+    white 180%
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
-.line img {
-            /* height: 100px; */
+.slide {
+  display: inline-block;
+  animation: tape 25s linear infinite;
 }
-.dote {
-            width: 130%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            animation: tape 5s infinite  linear;
-            animation-fill-mode: forwards;
-            animation-direction: reverse;
+.line .slide img {
+  height: 60px;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.line:hover .slide {
+  animation-play-state: paused;
 }
 @keyframes tape {
-  0% {
+  from {
     transform: translateX(0);
-    visibility: visible;
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
