@@ -254,3 +254,59 @@ main .text button a {
   box-shadow: 0px 2px 10px #515151;
 }
 /* End   Landing Page || Main Secition */
+p.one {
+            text-align: center;
+            font-family: "Archivo Black", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.two {
+            text-align: center;
+            font-family: "Oswald", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.three {
+            text-align: center;
+            font-family: "Prompt", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.four {
+            text-align: center;
+            font-family: "PT Sans", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.five {
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.seven {
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
+p.eight {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            color: white;
+            background-color: black;
+            margin: 5px 0;
+            font-size: 25px;
+}
