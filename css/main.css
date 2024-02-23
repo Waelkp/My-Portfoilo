@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100vh;
   background-color: #0e1111;
@@ -325,18 +328,13 @@ main .text button a {
   margin: 30px 0px;
   padding: 30px 0px;
 }
-.projects .contener {
-}
-.projects section {
-}
 .projects section .done {
   color: var(--textColorMain);
   font-family: two, one, three, four;
   /* ====== */
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 50px 20px;
 }
 section .done .text {
   display: flex;
@@ -368,7 +366,6 @@ section .done .sec-img {
   }
 }
 section .done .sec-img img {
-  /* max-width: 100%; */
   height: 150px;
 }
 .netflex-desktop {
@@ -412,10 +409,36 @@ section .done .sec-img img {
 }
 .btn a {
   color: white;
-  font-family: two;
+  font-family: "Prompt", sans-serif;
   text-decoration: none;
 }
 /* Mobile */
+.pand {
+  position: relative;
+}
+/* Mobile */
+.done {
+  margin-bottom: 7rem;
+  margin-top: 7rem;
+}
+.ptwo .sec-img {
+  justify-content: flex-start !important;
+}
+.pthree .sec-img {
+  justify-content: flex-start !important;
+}
+.pthree .netflex-mobile {
+  height: 142px !important;
+  right: -1px !important;
+  top: 3px !important;
+}
+.ptwo .sec-img .pand img:first-child {
+  height: 200px !important;
+}
+.ptwo .sec-img .pand img:last-child {
+  left: 0;
+  width: 220px;
+}
 @media (width < 786px) {
   .projects section .done {
     grid-template-columns: repeat(1, 1fr);
@@ -427,9 +450,100 @@ section .done .sec-img img {
     text-align: center;
     margin: 10px auto;
   }
+  section .ptwo .sec-img {
+    justify-content: center !important;
+  }
+  section .pthree .sec-img {
+    justify-content: center !important;
+  }
 }
-.pand {
-  position: relative;
+.br {
+  width: 100%;
+  height: 5px;
+  background-color: #333;
+  margin-bottom: 25px;
+  border-radius: 10px 10px 0 0;
 }
-/* Mobile */
 /* End Projects Secition */
+/* Tell me */
+.tell-us {
+}
+.tell-us .the-end {
+  text-align: center;
+}
+.tell-us .the-end h2 {
+  margin: 25px 0;
+  font-size: 48px;
+  color: var(--textColorMain);
+  font-family: "Archivo Black", sans-serif;
+}
+.tell-us .icon {
+  width: fit-content;
+  background-color: var(--textColorMain);
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 60px;
+  border-radius: 30px;
+  box-shadow: inset 0px -8px 10px black;
+  border-bottom: 0px solid black;
+}
+
+.vb button {
+  width: 90px;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  margin: 0 10px;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+}
+.tell-us .vb a:first-child button {
+  background-color: rgb(67 67 67);
+  color: white;
+  font-weight: 800;
+  transition: 0.7s;
+  border: transparent 3px solid;
+  &:hover {
+    background-color: black;
+  }
+}
+.tell-us .vb a:last-child button {
+  color: white;
+  background-color: transparent;
+  border: black 3px solid;
+  transition: 0.7s;
+  &:hover {
+    background-color: black;
+  }
+}
+/* Tell me */
+footer {
+  margin: 150px 0;
+  color: var(--textColorMain);
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .info p {
+  font-family: "Oswald", sans-serif;
+}
+footer .info .me {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .info .me img {
+  height: 100px;
+  border-radius: 50px;
+  transition: var(--TranitionMain);
+  &:hover {
+    border-radius: 50px 0px 0px 50px;
+  }
+}
+footer .info .me span {
+  font-family: "Oswald", sans-serif;
+}
+/* Footer */
+/* Footer */
