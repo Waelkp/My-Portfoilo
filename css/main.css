@@ -466,8 +466,6 @@ section .done .sec-img img {
 }
 /* End Projects Secition */
 /* Tell me */
-.tell-us {
-}
 .tell-us .the-end {
   text-align: center;
 }
@@ -518,7 +516,8 @@ section .done .sec-img img {
 }
 /* Tell me */
 footer {
-  margin: 150px 0;
+  margin: 50px 0;
+  margin-top: 150px;
   color: var(--textColorMain);
 }
 footer .info {
